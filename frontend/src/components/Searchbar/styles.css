@@ -1,0 +1,54 @@
+.market-search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin: 0 8px 0 8px;
+    box-shadow: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin: 0 8px 0 8px;
+    box-shadow: none;
+    border: none;
+}
+
+.market-search-icon {
+    width: auto;
+    height: 20px;
+    color: #000;
+}
+
+.market-btn {
+    background-color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.market-btn:hover {
+    background: rgb(219, 219, 219);
+    color: #EEE;
+}
+
+.market-btn:active {
+    color: rgb(78, 78, 78);
+}
+
+.market-form-btn-container {
+    display: flex;
+    justify-content: center;
+}
