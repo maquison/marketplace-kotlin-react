@@ -1,4 +1,5 @@
 .market-search-container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +10,8 @@
     border-radius: 10px;
 }
 
-.form-control {
+.market-search-form-control {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +27,12 @@
     color: #000;
 }
 
-.market-btn {
+.market-search-form-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.market-search-btn {
     background-color: var(--color-primary);
     font-size: 14px;
     font-weight: 700;
@@ -39,16 +46,11 @@
     border-radius: 10px;
 }
 
-.market-btn:hover {
+.market-search-btn:hover {
     background: rgb(219, 219, 219);
     color: #EEE;
 }
 
-.market-btn:active {
+.market-search-btn:active {
     color: rgb(78, 78, 78);
-}
-
-.market-form-btn-container {
-    display: flex;
-    justify-content: center;
 }
