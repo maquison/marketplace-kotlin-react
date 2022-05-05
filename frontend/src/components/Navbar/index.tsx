@@ -10,15 +10,18 @@ function Navbar() {
             <nav className="container">
                 <div className="market-nav-content">
                     <h1>Marketplace</h1>
-                    <Searchbar/>
+                    <Searchbar />
                     <div className="market-icons">
-                    <a href="https://github.com/maquison/marketplace-kotlin-react">
+                        <a href="https://github.com/maquison/marketplace-kotlin-react">
+                            <div className="market-profile-container">
+                                <ProfileIcon className="market-profile-icon" />
+                                <p className="market-profile-link">Profile</p>
+                            </div>
+                        </a>
                         <div className="market-profile-container">
-                            <ProfileIcon className="market-profile-icon" />
-                            <p className="market-profile-link">Profile</p>
+                            <CartIcon className="market-profile-icon" />
+                            <p className="market-profile-link">Cart</p>
                         </div>
-                    </a>
-                    <CartIcon className="market-profile-icon" />
                     </div>
                 </div>
             </nav>
