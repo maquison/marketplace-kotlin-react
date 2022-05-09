@@ -6,6 +6,7 @@ import {
 import Navbar from "components/Navbar";
 import Listing from "pages/Listing";
 import Item from "pages/Item";
+import Cart from "pages/Cart";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/item">
           <Route path=":itemId" element={<Item />} />
         </Route>
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
   );

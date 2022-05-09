@@ -1,0 +1,119 @@
+.market-cart-container {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;    
+    min-width: 750px;
+    justify-content: center;
+    align-items: center;
+}
+
+.market-cart-form-container {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    min-width: 750px;
+    justify-content: center;
+}
+
+.market-cart-item-container {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    min-width: 750px;
+    justify-content: left;
+    align-items: center;    
+}
+
+.market-cart-form-column-container {
+    max-width: 500px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.market-cart-form-summary-info-container {
+    max-width: 500px;
+    margin: 10px;
+    margin-left: 110px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px 8px 8px 8px;
+    justify-content: center;
+}
+
+.market-cart-form-summary-info-container h1 {
+    color: #686767;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    min-height: 40px;
+    text-decoration: line-through;
+}
+
+.market-cart-form-summary-info-container h3 {
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    min-height: 40px;
+}
+
+.market-cart-card-image {
+    width: 200px ;
+    height: 200px ;
+    border-radius: 8px 0px 0px 8px;    
+}
+
+.market-cart-card-info {
+    width: 200px ;
+    height: 200px ;   
+    border-radius: 0px 0px 0px 0px;  
+    background-color: #fff;  
+    align-items: center;
+    justify-content: center;    
+    display: flex;
+    
+}
+
+.market-cart-card-info h3{
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    min-height: 40px;    
+}
+
+.market-cart-card-price {
+    width: 200px ;
+    height: 200px ;   
+    border-radius: 0px 8px 8px 0px;  
+    background-color: #fff;  
+    align-items: center;
+    justify-content: center;    
+    display: flex;
+    
+}
+
+.market-cart-card-price h3{
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    min-height: 40px;  
+    margin: 0px;  
+}
