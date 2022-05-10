@@ -1,4 +1,4 @@
-import ItemCard from "components/ItemCard";
+import { ReactComponent as Trash } from 'assets/img/trash.svg';
 import "./styles.css"
 
 function Cart() {
@@ -13,7 +13,7 @@ function Cart() {
     };
 
     const countItens = 3;
-    const sumPrices = 3 * 2699.99;
+    const sumPrices = countItens * 2699.99;
 
     return (
         <div className="market-cart-container">
@@ -23,27 +23,33 @@ function Cart() {
                         <img className="market-cart-card-image" src={item.image} alt={item.title} />
                         <div className="market-cart-card-info">
                             <h3>{item.title}</h3>
-                        </div>
-                        <div className="market-cart-card-price">
                             <h3>R$ {item.price}</h3>
+                        </div>
+                        <div className="market-cart-card-right">
+                            <input className="market-input-number" type="number" placeholder="1"/>                            
+                            <Trash className="market-trash-icon"/>
                         </div>
                     </div>
                     <div className="market-cart-item-container">
                         <img className="market-cart-card-image" src={item.image} alt={item.title} />
                         <div className="market-cart-card-info">
                             <h3>{item.title}</h3>
-                        </div>
-                        <div className="market-cart-card-price">
                             <h3>R$ {item.price}</h3>
+                        </div>
+                        <div className="market-cart-card-right">
+                            <input className="market-input-number" type="number" placeholder="1"/>                            
+                            <Trash className="market-trash-icon"/>
                         </div>
                     </div>
                     <div className="market-cart-item-container">
                         <img className="market-cart-card-image" src={item.image} alt={item.title} />
                         <div className="market-cart-card-info">
                             <h3>{item.title}</h3>
-                        </div>
-                        <div className="market-cart-card-price">
                             <h3>R$ {item.price}</h3>
+                        </div>
+                        <div className="market-cart-card-right">
+                            <input className="market-input-number" type="number" placeholder="1"/>                            
+                            <Trash className="market-trash-icon"/>
                         </div>
                     </div>
                 </div>
