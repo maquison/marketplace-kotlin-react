@@ -1,0 +1,57 @@
+.market-orders-container {
+    max-width: 100%;
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;    
+    min-width: 750px;
+    justify-content: center;
+    align-items: center;
+}
+
+.market-orders-list-container {
+    max-width: 100%;
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    min-width: 750px;
+    justify-content: center;   
+    align-items: center;     
+}
+
+.market-orders-card-info-container {
+    width: 200%;
+    height: 150px;
+    max-width: 2000px;    
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0px 8px 8px 0px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.market-orders-card-info-container h3 {
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;    
+    min-height: 40px;       
+    padding: 0px;  
+    margin: 0px; 
+}
+
+.market-orders-card-image {
+    width: 200px ;
+    height: 150px ;
+    border-radius: 8px 0px 0px 8px;    
+}
+
+.market-orders-middle-card-image {
+    width: 200px ;
+    height: 150px ;
+    border-radius: 0px 0px 0px 0px;    
+}
