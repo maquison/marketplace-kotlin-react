@@ -10,6 +10,7 @@ import Cart from "pages/Cart";
 import Orders from "pages/Orders";
 import Login from "pages/Login";
 import Register from "pages/Register";
+import Address from "pages/Address";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/orders" element={<Orders />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/address" element={<Address />} />
       </Routes>
     </BrowserRouter>
   );
