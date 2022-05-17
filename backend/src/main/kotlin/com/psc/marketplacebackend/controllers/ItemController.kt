@@ -16,7 +16,7 @@ class ItemController (private val itemRepository: ItemRepository) {
 
     @GetMapping("/items")
     fun getAllItems(): List<Item> =
-        itemService.findAll()
+        itemService.getAll()
 
 
     @PostMapping("/items")
