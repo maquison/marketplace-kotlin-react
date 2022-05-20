@@ -11,8 +11,8 @@ function Address() {
     return (
         <div className="market-address-container">
             <form className="market-address-form-card">
-            <h2>Select address</h2>
-            <select className="market-login-input" id="city" required >
+                <h2>Select address</h2>
+                <select className="market-login-input" id="address" required >
                     <option value={address.id}>{address.street}, {address.number}</option>
                 </select>
                 <button type="submit" className="market-end-btn">Select</button>
@@ -37,12 +37,12 @@ function Address() {
                 </select>
                 <input type="number" className="market-login-input" placeholder="Zip code" id="zipcode" required />
                 <div className="market-address-form-group">
-                    <input type="checkbox" id="default" /> 
+                    <input type="checkbox" id="default" />
                     <h6>Set as default</h6>
                 </div>
                 <button type="submit" className="market-login-btn">Save</button>
                 <button className="market-end-btn">Cancel</button>
-            </form>            
+            </form>
         </div>
     );
 }

@@ -1,0 +1,149 @@
+.market-payment-container {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1350px;
+    min-width: 320px;
+}
+
+.market-payment-form-card {
+    max-width: 900px;
+    min-width: 320px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #fff;
+    align-items: left;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.market-payment-form-card a {
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.market-payment-container h2 {
+    color: #4A4A4A;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+.market-payment-container h3 {
+    color: #4A4A4A;
+    margin-top: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+.market-payment-container h4 {
+    color: #4A4A4A;
+    text-align: left;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.market-payment-container h5 {
+    color: #4A4A4A;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.market-payment-container h6 {
+    color: #4A4A4A;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.market-payment-form-summary-card {
+    max-width: 450px;
+    min-width: 200px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.market-payment-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: row;
+}
+
+.market-payment-btn {
+    background-color: black;
+    font-size: 12px;
+    font-weight: 700;
+    height: 30px;
+    width: 30%;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.market-payment-card-image {
+    width: 40%;
+    min-width: 50px;
+    border-radius: 8px 8px 0 0;
+    margin-left: 5px;
+}
+
+.market-payment-input {
+    width: 100%;
+    max-width: 387px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 5px;
+}
+
+.market-payment-md-input {
+    width: 100%;
+    max-width: 182px;
+    min-width: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 5px;
+}
+
+.market-payment-sm-input {
+    width: 100%;
+    max-width: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
