@@ -1,1 +1,2 @@
-web: java -jar build/libs/kotlin-api.jar
+web: java -jar build/libs/marketplace-backend-0.0.1-SNAPSHOT.jar
+
