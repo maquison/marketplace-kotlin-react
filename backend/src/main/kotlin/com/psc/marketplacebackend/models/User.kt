@@ -1,11 +1,9 @@
 package com.psc.marketplacebackend.models
 
-import javax.persistence.Column
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import javax.persistence.*
 import javax.validation.constraints.NotBlank
 
+@Entity
 data class User(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
@@ -25,4 +23,8 @@ data class User(
     @get: NotBlank
     @Column
     val lastName: String = "",
+
+    @get: NotBlank
+    @Column
+    val email: String = "",
 )

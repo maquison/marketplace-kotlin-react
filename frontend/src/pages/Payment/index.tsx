@@ -15,7 +15,7 @@ function Payment() {
         state: "Ceará",
         city: "Fortaleza",
         zipcode: "60115-000",
-        default: true,
+        default: true
     };
 
     const item = {
@@ -25,13 +25,14 @@ function Payment() {
         price: 2699.99,
         priceOld: 2999.99,
         count: 2,
-        score: 4.5
+        score: 4.5,
+        qtd: 1
     };
 
     const cart = {
         id: 1,
         content: [item, item, item],
-        qtd: 2,
+        qtd: 3
     };
 
     let cartPrice = 0;
@@ -59,12 +60,14 @@ function Payment() {
                     <div className="market-payment-form-card">
                         <h2>Card Payment</h2>
                         <div className="row">
-                            <div className="col-12 col-sm-12 col-md-6">
+                            <div className="col-12 col-sm-6 col-md-6">
                                 <input type="text" className="market-payment-input" placeholder="Card number" name="cardnumber" id="cardnumber" />
-                                <input type="text" className="market-payment-md-input" placeholder="MM" name="mm" id="mm" /> / &nbsp;
-                                <input type="text" className="market-payment-md-input" placeholder="YY" name="yy" id="yy" />
+                                <div className="market-payment-form-group">
+                                    <input type="text" className="market-payment-md-input" placeholder="MM" name="mm" id="mm" /> &nbsp;/&nbsp;
+                                    <input type="text" className="market-payment-md-input" placeholder="YY" name="yy" id="yy" />
+                                </div>
                             </div>
-                            <div className="col-12 col-sm-12 col-md-6">
+                            <div className="col-12 col-sm-6 col-md-6">
                                 <input type="text" className="market-payment-input" placeholder="Card Holder Name" name="cardholder" id="cardholder" />
                                 <input type="text" className="market-payment-md-input" placeholder="CCV" name="ccv" id="ccv" />
                             </div>
@@ -83,7 +86,7 @@ function Payment() {
                                         <h4>R$ {item.price}</h4>
                                     </div>
                                     <div className="col-12 col-sm-12 col-md-2">
-                                        <input type="number" className="market-payment-sm-input" value={item.id} />
+                                        <input type="number" className="market-payment-sm-input" value={item.qtd} />
                                     </div>
                                 </>
                             )
