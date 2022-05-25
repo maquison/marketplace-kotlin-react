@@ -11,7 +11,7 @@ class ItemServiceImpl: ItemService {
     @Autowired
     lateinit var repository: ItemRepository
 
-    override fun getAll(): List<Item> {
+    override fun getAll(): Iterable<Item> {
         return repository.findAll()
     }
 

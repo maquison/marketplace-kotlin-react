@@ -15,7 +15,7 @@ class UserController {
     lateinit var userService: UserService
 
     @GetMapping("/users")
-    fun getAllUsers(): List<User> =
+    fun getAllUsers(): Iterable<User> =
         userService.getAll()
 
 

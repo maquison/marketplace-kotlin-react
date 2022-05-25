@@ -13,12 +13,13 @@ class UserServiceImpl : UserService {
     @Autowired
     lateinit var repository: UserRepository
 
-    override fun getAll(): List<User> {
-        TODO("Not yet implemented")
+    override fun getAll(): Iterable<User> {
+        return repository.findAll()
     }
 
-    override fun create(User: User): User {
-        TODO("Not yet implemented")
+    override fun create(user: User): User {
+        repository.save(user)
+        return user
     }
 
     override fun getByID(userID: Long): ResponseEntity<User> {

@@ -4,6 +4,7 @@ import com.psc.marketplacebackend.models.Item
 
 interface ItemService {
 
-    fun getAll(): List<Item>
+    fun getAll(): Iterable<Item>
     fun create(item: Item): Item
+
 }

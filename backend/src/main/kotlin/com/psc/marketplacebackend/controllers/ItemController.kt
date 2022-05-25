@@ -15,7 +15,7 @@ class ItemController (private val itemRepository: ItemRepository) {
     lateinit var itemService: ItemService
 
     @GetMapping("/items")
-    fun getAllItems(): List<Item> =
+    fun getAllItems(): Iterable<Item> =
         itemService.getAll()
 
 

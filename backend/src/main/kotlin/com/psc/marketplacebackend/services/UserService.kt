@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity
 
 interface UserService {
 
-    fun getAll(): List<User>
+    fun getAll(): Iterable<User>
     fun create(User: User): User
     fun getByID(userID: Long): ResponseEntity<User>
     fun updateByID(userID: Long, newUser: User): ResponseEntity<User>
