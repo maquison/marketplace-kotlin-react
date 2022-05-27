@@ -4,6 +4,8 @@ import com.psc.marketplacebackend.models.Item
 import com.psc.marketplacebackend.repositories.ItemRepository
 import com.psc.marketplacebackend.services.ItemService
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.Pageable
 import org.springframework.web.bind.annotation.*
 import javax.validation.Valid
 
@@ -17,6 +19,10 @@ class ItemController (private val itemRepository: ItemRepository) {
     @GetMapping("/items")
     fun getAllItems(): Iterable<Item> =
         itemService.getAll()
+
+    @GetMapping("/items-page")
+    fun getItemsPage(pageable: Pageable): Page<Item> =
+        itemService.findAll(pageable)
 
 
     @PostMapping("/items")

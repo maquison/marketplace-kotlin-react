@@ -6,7 +6,7 @@ import { BASE_URL } from "utils/requests";
 function Listing() {
 
     // FORMA ERRADA
-    axios.get(`${BASE_URL}/api/items`)
+    axios.get(`${BASE_URL}/api/items-page?size=12&page=1&sort=id`)
         .then(response => {
             console.log(response.data);
         });
