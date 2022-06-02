@@ -4,8 +4,8 @@ export type Item = {
     description: string;
     category: string;
     image: string;
-    current_price: number;
-    previous_price: number;
+    currentPrice: number;
+    previousPrice: number;
     reviews: number;
     classification: number;
 }
