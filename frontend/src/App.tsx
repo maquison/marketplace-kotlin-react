@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import Navbar from "components/Navbar";
 import Listing from "pages/Listing";
-import Item from "pages/Item";
+import ItemPage from "pages/ItemPage";
 import Cart from "pages/Cart";
 import Orders from "pages/Orders";
 import Login from "pages/Login";
@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Listing />} />
         <Route path="/item">
-          <Route path=":itemId" element={<Item />} />
+          <Route path=":itemId" element={<ItemPage />} />
         </Route>
         <Route path="/cart" element={<Cart />} />
         <Route path="/orders" element={<Orders />} />
