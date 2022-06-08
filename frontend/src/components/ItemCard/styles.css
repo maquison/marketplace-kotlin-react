@@ -1,9 +1,12 @@
 .market-item-list-card-image {
     width: 100%;
     border-radius: 8px 8px 0 0;
+    background-color: #fff;    
+    padding: 5px;
 }
 
-.market-item-list-card-bottom-container {
+.market-item-list-card-bottom-container {       
+    height: 230px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -26,7 +29,7 @@
     text-align: center;
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .market-item-list-card-bottom-container h5 {

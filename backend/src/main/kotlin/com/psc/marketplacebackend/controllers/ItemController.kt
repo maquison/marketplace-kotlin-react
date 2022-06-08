@@ -1,7 +1,6 @@
 package com.psc.marketplacebackend.controllers
 
 import com.psc.marketplacebackend.models.Item
-import com.psc.marketplacebackend.models.User
 import com.psc.marketplacebackend.repositories.ItemRepository
 import com.psc.marketplacebackend.services.ItemService
 import org.springframework.beans.factory.annotation.Autowired

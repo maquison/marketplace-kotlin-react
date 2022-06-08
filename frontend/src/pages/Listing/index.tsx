@@ -25,13 +25,17 @@ function Listing() {
         axios.get(`${BASE_URL}/api/items-page?size=12&page=${pageNumber}&sort=id`)
             .then(response => {
                 const data = response.data as ItemPage;
-                setPage(data);                
+                setPage(data);
             });
     }, [pageNumber]);
 
+    const handlePageChange = (newPageNumber: number) => {
+        setPageNumber(newPageNumber);
+    }
+
     return (
         <>
-            <Pagination />
+            <Pagination page={page} onChange={handlePageChange} />
 
             <div className="container">
                 <div className="row">
